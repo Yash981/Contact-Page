@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-image: url(/Images/bg-image.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+.logo{
+    width: auto;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+.form_header{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 2rem;
+    
+}
+.header1{
+    margin-bottom: 1rem;
+}
+.headerss{
+    color: white;
+    font-size: 40px;
+}
+.headerss2{
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+}
+
+#actual_form{
+    width: 50%;
+    height: auto;
+    padding: 2rem;
+    border-radius: 20px;
+    background-color: rgba(205, 213, 224,0.49);
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap:1rem;
+    box-shadow: 0px 0px 5px #111729;
+}
+.namefield,.emailfield,.companysize,.subjectsss{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.namefield > label,.emailfield > label,.companysize > label,.subjectsss > label{
+    margin-bottom: 0.2rem;
+    color: white;
+    font-weight: 400;
+    font-size: medium;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+.namefield > input,.emailfield > input{
+    width: 100%;
+    padding: 0.9rem;
+    border-radius: 10px;
+    outline: none;
+    border:none;
+    font-size:larger;
+
+}
+.namefield > input::placeholder,.emailfield > input::placeholder{
+    color: #CDD5E0;
+}
+.message,.submit:nth-last-child(-n+2){
+    grid-column: span 2;
+}
+.message{
+    display: grid;
+    width: 100%;
+}
+.message > label{
+    display: grid;
+    place-items: start;
+    margin-bottom: 0.2rem;
+    color: white;
+}
+.companysize > select,.subjectsss > select{
+    padding: 1rem;
+    border-radius: 10px;
+    outline: none;
+    border:none;
+    font-size: medium;
+    width: 100%;
+    color:#111729;
+    font-weight: 600;
+}
+
+
+.submit > button{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 15px;
+    outline: none;
+    border:none;
+    font-size: large;
+    color:#4036A9;
+    font-weight: 600;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    cursor: pointer;
+}
+.message > textarea{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    outline: none;
+    border:none;
+    font-size: large;
+    padding: 1rem;
+    font-weight: 600;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    resize: none;
+}
+@media (1024px <= width <= 1400px){
+    #actual_form{
+        width: 90%;
+    }
+}
+@media (768px <= width <= 1023px){
+    #actual_form{
+        width: 80%;
+    }
+}
+@media (425px <= width <= 767px){
+    #actual_form{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        gap:2rem;
+    }
+    .header2{
+        margin-bottom: 1rem;
+    }
+    .headerss2{
+        font-size: 20px;
+        text-align: center;
+    }
+}
